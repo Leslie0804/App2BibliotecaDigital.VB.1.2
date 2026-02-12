@@ -1,25 +1,35 @@
-Public MustInherit Class Material
-    Public Property Id As Integer
-    Public Property Título As String
-    Public Property Año As Integer
-    Public Property Stock As Integer
-    Public Property Tipo As String
+Imports System
+Imports System.Collections.Generic
+Imports System.Linq
+Imports System.Text
+Imports System.Threading.Tasks
 
-    Private Shared contador As Integer = 1
+Namespace App._2._2.BibliotecDigital
+    Public MustInherit Class Material
+        Public Property Id As Integer
+        Public Property Título As String
+        Public Property Año As Integer
+        Public Property Stock As Integer
+        Public Property Tipo As String
 
-    Public Sub New(titulo As String, anio As Integer, stock As Integer)
-        Id = contador
-        contador += 1
-        Me.Título = titulo
-        Me.Año = anio
-        Me.Stock = stock
-    End Sub
+        Private Shared contador As Integer = 1
 
-    Public Sub ActualizarStock(cantidad As Integer)
-        Stock += cantidad
-    End Sub
+        Public Sub New(titulo As String, año As Integer, stock As Integer)
+            Id = contador
+            contador += 1
+            Me.Título = titulo
+            Me.Año = año
+            Me.Stock = stock
+        End Sub
 
-    Public Overridable Function ObtenerInformacion() As String
-        Return $"ID: {Id} - Tipo: {Tipo} - Título: {Título} - Año: {Año} - Stock: {Stock}"
-    End Function
-End Class
+        Public Sub ActualizarStock(cantidad As Integer)
+            Stock += cantidad
+        End Sub
+
+        Public Overridable ReadOnly Property Detalles As String
+            Get
+                Return $"{Tipo}: {Título} ({Año})"
+            End Get
+        End Property
+    End Class
+End Namespace

@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
@@ -22,503 +22,497 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.tabControl1 = New System.Windows.Forms.TabControl()
+        Me.tabGestion = New System.Windows.Forms.TabPage()
+        Me.grpTipo = New System.Windows.Forms.GroupBox()
+        Me.rbRevista = New System.Windows.Forms.RadioButton()
+        Me.rbLibro = New System.Windows.Forms.RadioButton()
+        Me.lblTitulo = New System.Windows.Forms.Label()
+        Me.txtTitulo = New System.Windows.Forms.TextBox()
+        Me.lblAnio = New System.Windows.Forms.Label()
+        Me.txtAnio = New System.Windows.Forms.TextBox()
+        Me.lblStock = New System.Windows.Forms.Label()
+        Me.txtStock = New System.Windows.Forms.TextBox()
+        Me.grpDetalles = New System.Windows.Forms.GroupBox()
+        Me.lblAutor = New System.Windows.Forms.Label()
+        Me.txtAutor = New System.Windows.Forms.TextBox()
+        Me.lblGenero = New System.Windows.Forms.Label()
+        Me.txtGenero = New System.Windows.Forms.TextBox()
+        Me.lblPaginas = New System.Windows.Forms.Label()
+        Me.txtPaginas = New System.Windows.Forms.TextBox()
+        Me.lblMes = New System.Windows.Forms.Label()
+        Me.txtMes = New System.Windows.Forms.TextBox()
+        Me.lblEdicion = New System.Windows.Forms.Label()
+        Me.txtEdicion = New System.Windows.Forms.TextBox()
+        Me.btnAgregar = New System.Windows.Forms.Button()
+        Me.tabInventario = New System.Windows.Forms.TabPage()
         Me.dgvInventario = New System.Windows.Forms.DataGridView()
         Me.btnRefrescar = New System.Windows.Forms.Button()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.txtPaginasLibro = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.txtStockLibro = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtAnioLibro = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtGeneroLibro = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtAutorLibro = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtTituloLibro = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnAgregarLibro = New System.Windows.Forms.Button()
-        Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.txtStockRevista = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.txtMesRevista = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.txtEdicionRevista = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.txtAnioRevista = New System.Windows.Forms.TextBox()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.txtTituloRevista = New System.Windows.Forms.TextBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.btnAgregarRevista = New System.Windows.Forms.Button()
-        Me.TabPage4 = New System.Windows.Forms.TabPage()
-        Me.dgvBusqueda = New System.Windows.Forms.DataGridView()
+        Me.grpOperaciones = New System.Windows.Forms.GroupBox()
+        Me.numStock = New System.Windows.Forms.NumericUpDown()
+        Me.btnSumarStock = New System.Windows.Forms.Button()
+        Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.tabBusqueda = New System.Windows.Forms.TabPage()
+        Me.lblBuscar = New System.Windows.Forms.Label()
+        Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.btnBuscar = New System.Windows.Forms.Button()
-        Me.txtBusqueda = New System.Windows.Forms.TextBox()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.txtIdUpdate = New System.Windows.Forms.TextBox()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.txtCantidadUpdate = New System.Windows.Forms.TextBox()
-        Me.btnActualizarStock = New System.Windows.Forms.Button()
-        Me.TabControl1.SuspendLayout()
-        Me.TabPage1.SuspendLayout()
+        Me.dgvResultados = New System.Windows.Forms.DataGridView()
+        
+        Me.tabControl1.SuspendLayout()
+        Me.tabGestion.SuspendLayout()
+        Me.grpTipo.SuspendLayout()
+        Me.grpDetalles.SuspendLayout()
+        Me.tabInventario.SuspendLayout()
         CType(Me.dgvInventario, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPage2.SuspendLayout()
-        Me.TabPage3.SuspendLayout()
-        Me.TabPage4.SuspendLayout()
-        CType(Me.dgvBusqueda, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
+        Me.grpOperaciones.SuspendLayout()
+        CType(Me.numStock, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tabBusqueda.SuspendLayout()
+        CType(Me.dgvResultados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        
         '
-        'TabControl1
+        'tabControl1
         '
-        Me.TabControl1.Controls.Add(Me.TabPage1)
-        Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Controls.Add(Me.TabPage3)
-        Me.TabControl1.Controls.Add(Me.TabPage4)
-        Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TabControl1.Location = New System.Drawing.Point(0, 0)
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(800, 450)
-        Me.TabControl1.TabIndex = 0
+        Me.tabControl1.Controls.Add(Me.tabGestion)
+        Me.tabControl1.Controls.Add(Me.tabInventario)
+        Me.tabControl1.Controls.Add(Me.tabBusqueda)
+        Me.tabControl1.Location = New System.Drawing.Point(12, 12)
+        Me.tabControl1.Name = "tabControl1"
+        Me.tabControl1.SelectedIndex = 0
+        Me.tabControl1.Size = New System.Drawing.Size(760, 480)
+        Me.tabControl1.TabIndex = 0
+        
         '
-        'TabPage1
+        'tabGestion
         '
-        Me.TabPage1.Controls.Add(Me.btnRefrescar)
-        Me.TabPage1.Controls.Add(Me.dgvInventario)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(792, 424)
-        Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Inventario"
-        Me.TabPage1.UseVisualStyleBackColor = True
+        Me.tabGestion.Controls.Add(Me.grpTipo)
+        Me.tabGestion.Controls.Add(Me.lblTitulo)
+        Me.tabGestion.Controls.Add(Me.txtTitulo)
+        Me.tabGestion.Controls.Add(Me.lblAnio)
+        Me.tabGestion.Controls.Add(Me.txtAnio)
+        Me.tabGestion.Controls.Add(Me.lblStock)
+        Me.tabGestion.Controls.Add(Me.txtStock)
+        Me.tabGestion.Controls.Add(Me.grpDetalles)
+        Me.tabGestion.Controls.Add(Me.btnAgregar)
+        Me.tabGestion.Location = New System.Drawing.Point(4, 22)
+        Me.tabGestion.Name = "tabGestion"
+        Me.tabGestion.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabGestion.Size = New System.Drawing.Size(752, 454)
+        Me.tabGestion.TabIndex = 0
+        Me.tabGestion.Text = "Gestión"
+        Me.tabGestion.UseVisualStyleBackColor = True
+        
+        '
+        'grpTipo
+        '
+        Me.grpTipo.Controls.Add(Me.rbRevista)
+        Me.grpTipo.Controls.Add(Me.rbLibro)
+        Me.grpTipo.Location = New System.Drawing.Point(20, 20)
+        Me.grpTipo.Name = "grpTipo"
+        Me.grpTipo.Size = New System.Drawing.Size(200, 50)
+        Me.grpTipo.TabIndex = 0
+        Me.grpTipo.TabStop = False
+        Me.grpTipo.Text = "Tipo de Material"
+        
+        '
+        'rbLibro
+        '
+        Me.rbLibro.AutoSize = True
+        Me.rbLibro.Checked = True
+        Me.rbLibro.Location = New System.Drawing.Point(20, 20)
+        Me.rbLibro.Name = "rbLibro"
+        Me.rbLibro.Size = New System.Drawing.Size(48, 17)
+        Me.rbLibro.TabIndex = 0
+        Me.rbLibro.TabStop = True
+        Me.rbLibro.Text = "Libro"
+        Me.rbLibro.UseVisualStyleBackColor = True
+        
+        '
+        'rbRevista
+        '
+        Me.rbRevista.AutoSize = True
+        Me.rbRevista.Location = New System.Drawing.Point(100, 20)
+        Me.rbRevista.Name = "rbRevista"
+        Me.rbRevista.Size = New System.Drawing.Size(61, 17)
+        Me.rbRevista.TabIndex = 1
+        Me.rbRevista.TabStop = True
+        Me.rbRevista.Text = "Revista"
+        Me.rbRevista.UseVisualStyleBackColor = True
+        
+        '
+        'txtTitulo
+        '
+        Me.txtTitulo.Location = New System.Drawing.Point(20, 100)
+        Me.txtTitulo.Name = "txtTitulo"
+        Me.txtTitulo.Size = New System.Drawing.Size(300, 20)
+        Me.txtTitulo.TabIndex = 2
+        
+        '
+        'lblTitulo
+        '
+        Me.lblTitulo.AutoSize = True
+        Me.lblTitulo.Location = New System.Drawing.Point(20, 80)
+        Me.lblTitulo.Name = "lblTitulo"
+        Me.lblTitulo.Size = New System.Drawing.Size(35, 13)
+        Me.lblTitulo.TabIndex = 12
+        Me.lblTitulo.Text = "Título:"
+        
+        '
+        'txtAnio
+        '
+        Me.txtAnio.Location = New System.Drawing.Point(340, 100)
+        Me.txtAnio.Name = "txtAnio"
+        Me.txtAnio.Size = New System.Drawing.Size(80, 20)
+        Me.txtAnio.TabIndex = 3
+        
+        '
+        'lblAnio
+        '
+        Me.lblAnio.AutoSize = True
+        Me.lblAnio.Location = New System.Drawing.Point(340, 80)
+        Me.lblAnio.Name = "lblAnio"
+        Me.lblAnio.Size = New System.Drawing.Size(29, 13)
+        Me.lblAnio.TabIndex = 13
+        Me.lblAnio.Text = "Año:"
+        
+        '
+        'txtStock
+        '
+        Me.txtStock.Location = New System.Drawing.Point(440, 100)
+        Me.txtStock.Name = "txtStock"
+        Me.txtStock.Size = New System.Drawing.Size(80, 20)
+        Me.txtStock.TabIndex = 4
+        
+        '
+        'lblStock
+        '
+        Me.lblStock.AutoSize = True
+        Me.lblStock.Location = New System.Drawing.Point(440, 80)
+        Me.lblStock.Name = "lblStock"
+        Me.lblStock.Size = New System.Drawing.Size(38, 13)
+        Me.lblStock.TabIndex = 14
+        Me.lblStock.Text = "Stock:"
+        
+        '
+        'grpDetalles
+        '
+        Me.grpDetalles.Controls.Add(Me.lblAutor)
+        Me.grpDetalles.Controls.Add(Me.txtAutor)
+        Me.grpDetalles.Controls.Add(Me.lblGenero)
+        Me.grpDetalles.Controls.Add(Me.txtGenero)
+        Me.grpDetalles.Controls.Add(Me.lblPaginas)
+        Me.grpDetalles.Controls.Add(Me.txtPaginas)
+        Me.grpDetalles.Controls.Add(Me.lblMes)
+        Me.grpDetalles.Controls.Add(Me.txtMes)
+        Me.grpDetalles.Controls.Add(Me.lblEdicion)
+        Me.grpDetalles.Controls.Add(Me.txtEdicion)
+        Me.grpDetalles.Location = New System.Drawing.Point(20, 140)
+        Me.grpDetalles.Name = "grpDetalles"
+        Me.grpDetalles.Size = New System.Drawing.Size(500, 150)
+        Me.grpDetalles.TabIndex = 5
+        Me.grpDetalles.TabStop = False
+        Me.grpDetalles.Text = "Detalles Específicos"
+        
+        '
+        'lblAutor
+        '
+        Me.lblAutor.AutoSize = True
+        Me.lblAutor.Location = New System.Drawing.Point(20, 30)
+        Me.lblAutor.Name = "lblAutor"
+        Me.lblAutor.Size = New System.Drawing.Size(35, 13)
+        Me.lblAutor.TabIndex = 0
+        Me.lblAutor.Text = "Autor:"
+        
+        '
+        'txtAutor
+        '
+        Me.txtAutor.Location = New System.Drawing.Point(20, 50)
+        Me.txtAutor.Name = "txtAutor"
+        Me.txtAutor.Size = New System.Drawing.Size(200, 20)
+        Me.txtAutor.TabIndex = 1
+        
+        '
+        'lblGenero
+        '
+        Me.lblGenero.AutoSize = True
+        Me.lblGenero.Location = New System.Drawing.Point(240, 30)
+        Me.lblGenero.Name = "lblGenero"
+        Me.lblGenero.Size = New System.Drawing.Size(45, 13)
+        Me.lblGenero.TabIndex = 2
+        Me.lblGenero.Text = "Género:"
+        
+        '
+        'txtGenero
+        '
+        Me.txtGenero.Location = New System.Drawing.Point(240, 50)
+        Me.txtGenero.Name = "txtGenero"
+        Me.txtGenero.Size = New System.Drawing.Size(150, 20)
+        Me.txtGenero.TabIndex = 3
+        
+        '
+        'lblPaginas
+        '
+        Me.lblPaginas.AutoSize = True
+        Me.lblPaginas.Location = New System.Drawing.Point(410, 30)
+        Me.lblPaginas.Name = "lblPaginas"
+        Me.lblPaginas.Size = New System.Drawing.Size(48, 13)
+        Me.lblPaginas.TabIndex = 4
+        Me.lblPaginas.Text = "Páginas:"
+        
+        '
+        'txtPaginas
+        '
+        Me.txtPaginas.Location = New System.Drawing.Point(410, 50)
+        Me.txtPaginas.Name = "txtPaginas"
+        Me.txtPaginas.Size = New System.Drawing.Size(60, 20)
+        Me.txtPaginas.TabIndex = 5
+        
+        '
+        'lblMes
+        '
+        Me.lblMes.AutoSize = True
+        Me.lblMes.Location = New System.Drawing.Point(20, 80)
+        Me.lblMes.Name = "lblMes"
+        Me.lblMes.Size = New System.Drawing.Size(30, 13)
+        Me.lblMes.TabIndex = 6
+        Me.lblMes.Text = "Mes:"
+        Me.lblMes.Visible = False
+        
+        '
+        'txtMes
+        '
+        Me.txtMes.Location = New System.Drawing.Point(20, 100)
+        Me.txtMes.Name = "txtMes"
+        Me.txtMes.Size = New System.Drawing.Size(150, 20)
+        Me.txtMes.TabIndex = 7
+        Me.txtMes.Visible = False
+        
+        '
+        'lblEdicion
+        '
+        Me.lblEdicion.AutoSize = True
+        Me.lblEdicion.Location = New System.Drawing.Point(200, 80)
+        Me.lblEdicion.Name = "lblEdicion"
+        Me.lblEdicion.Size = New System.Drawing.Size(45, 13)
+        Me.lblEdicion.TabIndex = 8
+        Me.lblEdicion.Text = "Edición:"
+        Me.lblEdicion.Visible = False
+        
+        '
+        'txtEdicion
+        '
+        Me.txtEdicion.Location = New System.Drawing.Point(200, 100)
+        Me.txtEdicion.Name = "txtEdicion"
+        Me.txtEdicion.Size = New System.Drawing.Size(80, 20)
+        Me.txtEdicion.TabIndex = 9
+        Me.txtEdicion.Visible = False
+        
+        '
+        'btnAgregar
+        '
+        Me.btnAgregar.Location = New System.Drawing.Point(20, 310)
+        Me.btnAgregar.Name = "btnAgregar"
+        Me.btnAgregar.Size = New System.Drawing.Size(120, 40)
+        Me.btnAgregar.TabIndex = 6
+        Me.btnAgregar.Text = "Agregar al Inventario"
+        Me.btnAgregar.UseVisualStyleBackColor = True
+        
+        '
+        'tabInventario
+        '
+        Me.tabInventario.Controls.Add(Me.dgvInventario)
+        Me.tabInventario.Controls.Add(Me.btnRefrescar)
+        Me.tabInventario.Controls.Add(Me.grpOperaciones)
+        Me.tabInventario.Location = New System.Drawing.Point(4, 22)
+        Me.tabInventario.Name = "tabInventario"
+        Me.tabInventario.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabInventario.Size = New System.Drawing.Size(752, 454)
+        Me.tabInventario.TabIndex = 1
+        Me.tabInventario.Text = "Inventario"
+        Me.tabInventario.UseVisualStyleBackColor = True
+        
         '
         'dgvInventario
         '
+        Me.dgvInventario.AllowUserToAddRows = False
+        Me.dgvInventario.AllowUserToDeleteRows = False
+        Me.dgvInventario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvInventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvInventario.Location = New System.Drawing.Point(8, 6)
+        Me.dgvInventario.Location = New System.Drawing.Point(20, 60)
         Me.dgvInventario.Name = "dgvInventario"
-        Me.dgvInventario.Size = New System.Drawing.Size(776, 383)
+        Me.dgvInventario.ReadOnly = True
+        Me.dgvInventario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvInventario.Size = New System.Drawing.Size(710, 280)
         Me.dgvInventario.TabIndex = 0
+        
         '
         'btnRefrescar
         '
-        Me.btnRefrescar.Location = New System.Drawing.Point(8, 395)
+        Me.btnRefrescar.Location = New System.Drawing.Point(20, 20)
         Me.btnRefrescar.Name = "btnRefrescar"
-        Me.btnRefrescar.Size = New System.Drawing.Size(776, 23)
+        Me.btnRefrescar.Size = New System.Drawing.Size(100, 30)
         Me.btnRefrescar.TabIndex = 1
-        Me.btnRefrescar.Text = "Refrescar Inventario"
+        Me.btnRefrescar.Text = "Refrescar Lista"
         Me.btnRefrescar.UseVisualStyleBackColor = True
+        
         '
-        'TabPage2
+        'grpOperaciones
         '
-        Me.TabPage2.Controls.Add(Me.btnAgregarLibro)
-        Me.TabPage2.Controls.Add(Me.Label6)
-        Me.TabPage2.Controls.Add(Me.txtPaginasLibro)
-        Me.TabPage2.Controls.Add(Me.Label5)
-        Me.TabPage2.Controls.Add(Me.txtStockLibro)
-        Me.TabPage2.Controls.Add(Me.Label4)
-        Me.TabPage2.Controls.Add(Me.txtAnioLibro)
-        Me.TabPage2.Controls.Add(Me.Label3)
-        Me.TabPage2.Controls.Add(Me.txtGeneroLibro)
-        Me.TabPage2.Controls.Add(Me.Label2)
-        Me.TabPage2.Controls.Add(Me.txtAutorLibro)
-        Me.TabPage2.Controls.Add(Me.Label1)
-        Me.TabPage2.Controls.Add(Me.txtTituloLibro)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(792, 424)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "Agregar Libro"
-        Me.TabPage2.UseVisualStyleBackColor = True
+        Me.grpOperaciones.Controls.Add(Me.numStock)
+        Me.grpOperaciones.Controls.Add(Me.btnSumarStock)
+        Me.grpOperaciones.Controls.Add(Me.btnEliminar)
+        Me.grpOperaciones.Location = New System.Drawing.Point(20, 360)
+        Me.grpOperaciones.Name = "grpOperaciones"
+        Me.grpOperaciones.Size = New System.Drawing.Size(710, 80)
+        Me.grpOperaciones.TabIndex = 2
+        Me.grpOperaciones.TabStop = False
+        Me.grpOperaciones.Text = "Operaciones con Selección"
+        
         '
-        'txtPaginasLibro
+        'numStock
         '
-        Me.txtPaginasLibro.Location = New System.Drawing.Point(100, 160)
-        Me.txtPaginasLibro.Name = "txtPaginasLibro"
-        Me.txtPaginasLibro.Size = New System.Drawing.Size(100, 20)
-        Me.txtPaginasLibro.TabIndex = 11
+        Me.numStock.Location = New System.Drawing.Point(20, 30)
+        Me.numStock.Minimum = New Decimal(New Integer() {100, 0, 0, -2147483648})
+        Me.numStock.Name = "numStock"
+        Me.numStock.Size = New System.Drawing.Size(80, 20)
+        Me.numStock.TabIndex = 0
+        
         '
-        'Label6
+        'btnSumarStock
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(20, 163)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(48, 13)
-        Me.Label6.TabIndex = 10
-        Me.Label6.Text = "Páginas:"
+        Me.btnSumarStock.Location = New System.Drawing.Point(110, 25)
+        Me.btnSumarStock.Name = "btnSumarStock"
+        Me.btnSumarStock.Size = New System.Drawing.Size(100, 30)
+        Me.btnSumarStock.TabIndex = 1
+        Me.btnSumarStock.Text = "Sumar Stock"
+        Me.btnSumarStock.UseVisualStyleBackColor = True
+        
         '
-        'txtStockLibro
+        'btnEliminar
         '
-        Me.txtStockLibro.Location = New System.Drawing.Point(100, 134)
-        Me.txtStockLibro.Name = "txtStockLibro"
-        Me.txtStockLibro.Size = New System.Drawing.Size(100, 20)
-        Me.txtStockLibro.TabIndex = 9
+        Me.btnEliminar.Location = New System.Drawing.Point(600, 25)
+        Me.btnEliminar.Name = "btnEliminar"
+        Me.btnEliminar.Size = New System.Drawing.Size(100, 30)
+        Me.btnEliminar.TabIndex = 2
+        Me.btnEliminar.Text = "Eliminar Item"
+        Me.btnEliminar.UseVisualStyleBackColor = True
+        
         '
-        'Label5
+        'tabBusqueda
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(20, 137)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(38, 13)
-        Me.Label5.TabIndex = 8
-        Me.Label5.Text = "Stock:"
+        Me.tabBusqueda.Controls.Add(Me.lblBuscar)
+        Me.tabBusqueda.Controls.Add(Me.txtBuscar)
+        Me.tabBusqueda.Controls.Add(Me.btnBuscar)
+        Me.tabBusqueda.Controls.Add(Me.dgvResultados)
+        Me.tabBusqueda.Location = New System.Drawing.Point(4, 22)
+        Me.tabBusqueda.Name = "tabBusqueda"
+        Me.tabBusqueda.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabBusqueda.Size = New System.Drawing.Size(752, 454)
+        Me.tabBusqueda.TabIndex = 2
+        Me.tabBusqueda.Text = "Búsqueda"
+        Me.tabBusqueda.UseVisualStyleBackColor = True
+        
         '
-        'txtAnioLibro
+        'lblBuscar
         '
-        Me.txtAnioLibro.Location = New System.Drawing.Point(100, 108)
-        Me.txtAnioLibro.Name = "txtAnioLibro"
-        Me.txtAnioLibro.Size = New System.Drawing.Size(100, 20)
-        Me.txtAnioLibro.TabIndex = 7
+        Me.lblBuscar.AutoSize = True
+        Me.lblBuscar.Location = New System.Drawing.Point(20, 30)
+        Me.lblBuscar.Name = "lblBuscar"
+        Me.lblBuscar.Size = New System.Drawing.Size(87, 13)
+        Me.lblBuscar.TabIndex = 0
+        Me.lblBuscar.Text = "Buscar por título:"
+        
         '
-        'Label4
+        'txtBuscar
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(20, 111)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(29, 13)
-        Me.Label4.TabIndex = 6
-        Me.Label4.Text = "Año:"
-        '
-        'txtGeneroLibro
-        '
-        Me.txtGeneroLibro.Location = New System.Drawing.Point(100, 82)
-        Me.txtGeneroLibro.Name = "txtGeneroLibro"
-        Me.txtGeneroLibro.Size = New System.Drawing.Size(200, 20)
-        Me.txtGeneroLibro.TabIndex = 5
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(20, 85)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(45, 13)
-        Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Género:"
-        '
-        'txtAutorLibro
-        '
-        Me.txtAutorLibro.Location = New System.Drawing.Point(100, 56)
-        Me.txtAutorLibro.Name = "txtAutorLibro"
-        Me.txtAutorLibro.Size = New System.Drawing.Size(200, 20)
-        Me.txtAutorLibro.TabIndex = 3
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(20, 59)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(35, 13)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Autor:"
-        '
-        'txtTituloLibro
-        '
-        Me.txtTituloLibro.Location = New System.Drawing.Point(100, 30)
-        Me.txtTituloLibro.Name = "txtTituloLibro"
-        Me.txtTituloLibro.Size = New System.Drawing.Size(200, 20)
-        Me.txtTituloLibro.TabIndex = 1
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(20, 33)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(38, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Título:"
-        '
-        'btnAgregarLibro
-        '
-        Me.btnAgregarLibro.Location = New System.Drawing.Point(100, 200)
-        Me.btnAgregarLibro.Name = "btnAgregarLibro"
-        Me.btnAgregarLibro.Size = New System.Drawing.Size(100, 30)
-        Me.btnAgregarLibro.TabIndex = 12
-        Me.btnAgregarLibro.Text = "Agregar Libro"
-        Me.btnAgregarLibro.UseVisualStyleBackColor = True
-        '
-        'TabPage3
-        '
-        Me.TabPage3.Controls.Add(Me.btnAgregarRevista)
-        Me.TabPage3.Controls.Add(Me.Label7)
-        Me.TabPage3.Controls.Add(Me.txtStockRevista)
-        Me.TabPage3.Controls.Add(Me.Label8)
-        Me.TabPage3.Controls.Add(Me.txtMesRevista)
-        Me.TabPage3.Controls.Add(Me.Label9)
-        Me.TabPage3.Controls.Add(Me.txtEdicionRevista)
-        Me.TabPage3.Controls.Add(Me.Label10)
-        Me.TabPage3.Controls.Add(Me.txtAnioRevista)
-        Me.TabPage3.Controls.Add(Me.Label11)
-        Me.TabPage3.Controls.Add(Me.txtTituloRevista)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(792, 424)
-        Me.TabPage3.TabIndex = 2
-        Me.TabPage3.Text = "Agregar Revista"
-        Me.TabPage3.UseVisualStyleBackColor = True
-        '
-        'txtStockRevista
-        '
-        Me.txtStockRevista.Location = New System.Drawing.Point(100, 134)
-        Me.txtStockRevista.Name = "txtStockRevista"
-        Me.txtStockRevista.Size = New System.Drawing.Size(100, 20)
-        Me.txtStockRevista.TabIndex = 9
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(20, 137)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(38, 13)
-        Me.Label7.TabIndex = 8
-        Me.Label7.Text = "Stock:"
-        '
-        'txtMesRevista
-        '
-        Me.txtMesRevista.Location = New System.Drawing.Point(100, 108)
-        Me.txtMesRevista.Name = "txtMesRevista"
-        Me.txtMesRevista.Size = New System.Drawing.Size(100, 20)
-        Me.txtMesRevista.TabIndex = 7
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(20, 111)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(30, 13)
-        Me.Label8.TabIndex = 6
-        Me.Label8.Text = "Mes:"
-        '
-        'txtEdicionRevista
-        '
-        Me.txtEdicionRevista.Location = New System.Drawing.Point(100, 82)
-        Me.txtEdicionRevista.Name = "txtEdicionRevista"
-        Me.txtEdicionRevista.Size = New System.Drawing.Size(100, 20)
-        Me.txtEdicionRevista.TabIndex = 5
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(20, 85)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(46, 13)
-        Me.Label9.TabIndex = 4
-        Me.Label9.Text = "Edición:"
-        '
-        'txtAnioRevista
-        '
-        Me.txtAnioRevista.Location = New System.Drawing.Point(100, 56)
-        Me.txtAnioRevista.Name = "txtAnioRevista"
-        Me.txtAnioRevista.Size = New System.Drawing.Size(100, 20)
-        Me.txtAnioRevista.TabIndex = 3
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(20, 59)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(29, 13)
-        Me.Label10.TabIndex = 2
-        Me.Label10.Text = "Año:"
-        '
-        'txtTituloRevista
-        '
-        Me.txtTituloRevista.Location = New System.Drawing.Point(100, 30)
-        Me.txtTituloRevista.Name = "txtTituloRevista"
-        Me.txtTituloRevista.Size = New System.Drawing.Size(200, 20)
-        Me.txtTituloRevista.TabIndex = 1
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(20, 33)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(38, 13)
-        Me.Label11.TabIndex = 0
-        Me.Label11.Text = "Título:"
-        '
-        'btnAgregarRevista
-        '
-        Me.btnAgregarRevista.Location = New System.Drawing.Point(100, 180)
-        Me.btnAgregarRevista.Name = "btnAgregarRevista"
-        Me.btnAgregarRevista.Size = New System.Drawing.Size(100, 30)
-        Me.btnAgregarRevista.TabIndex = 10
-        Me.btnAgregarRevista.Text = "Agregar Revista"
-        Me.btnAgregarRevista.UseVisualStyleBackColor = True
-        '
-        'TabPage4
-        '
-        Me.TabPage4.Controls.Add(Me.GroupBox1)
-        Me.TabPage4.Controls.Add(Me.Label12)
-        Me.TabPage4.Controls.Add(Me.txtBusqueda)
-        Me.TabPage4.Controls.Add(Me.btnBuscar)
-        Me.TabPage4.Controls.Add(Me.dgvBusqueda)
-        Me.TabPage4.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage4.Size = New System.Drawing.Size(792, 424)
-        Me.TabPage4.TabIndex = 3
-        Me.TabPage4.Text = "Buscar / Actualizar"
-        Me.TabPage4.UseVisualStyleBackColor = True
-        '
-        'dgvBusqueda
-        '
-        Me.dgvBusqueda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvBusqueda.Location = New System.Drawing.Point(8, 45)
-        Me.dgvBusqueda.Name = "dgvBusqueda"
-        Me.dgvBusqueda.Size = New System.Drawing.Size(776, 250)
-        Me.dgvBusqueda.TabIndex = 0
+        Me.txtBuscar.Location = New System.Drawing.Point(120, 27)
+        Me.txtBuscar.Name = "txtBuscar"
+        Me.txtBuscar.Size = New System.Drawing.Size(300, 20)
+        Me.txtBuscar.TabIndex = 1
+        
         '
         'btnBuscar
         '
-        Me.btnBuscar.Location = New System.Drawing.Point(240, 16)
+        Me.btnBuscar.Location = New System.Drawing.Point(440, 25)
         Me.btnBuscar.Name = "btnBuscar"
-        Me.btnBuscar.Size = New System.Drawing.Size(75, 23)
-        Me.btnBuscar.TabIndex = 1
+        Me.btnBuscar.Size = New System.Drawing.Size(80, 25)
+        Me.btnBuscar.TabIndex = 2
         Me.btnBuscar.Text = "Buscar"
         Me.btnBuscar.UseVisualStyleBackColor = True
+        
         '
-        'txtBusqueda
+        'dgvResultados
         '
-        Me.txtBusqueda.Location = New System.Drawing.Point(60, 18)
-        Me.txtBusqueda.Name = "txtBusqueda"
-        Me.txtBusqueda.Size = New System.Drawing.Size(170, 20)
-        Me.txtBusqueda.TabIndex = 2
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(10, 21)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(38, 13)
-        Me.Label12.TabIndex = 3
-        Me.Label12.Text = "Título:"
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.btnActualizarStock)
-        Me.GroupBox1.Controls.Add(Me.txtCantidadUpdate)
-        Me.GroupBox1.Controls.Add(Me.Label14)
-        Me.GroupBox1.Controls.Add(Me.txtIdUpdate)
-        Me.GroupBox1.Controls.Add(Me.Label13)
-        Me.GroupBox1.Location = New System.Drawing.Point(8, 301)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(307, 100)
-        Me.GroupBox1.TabIndex = 4
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Actualizar Stock"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(15, 30)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(61, 13)
-        Me.Label13.TabIndex = 0
-        Me.Label13.Text = "ID Material:"
-        '
-        'txtIdUpdate
-        '
-        Me.txtIdUpdate.Location = New System.Drawing.Point(100, 27)
-        Me.txtIdUpdate.Name = "txtIdUpdate"
-        Me.txtIdUpdate.Size = New System.Drawing.Size(60, 20)
-        Me.txtIdUpdate.TabIndex = 1
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(15, 60)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(52, 13)
-        Me.Label14.TabIndex = 2
-        Me.Label14.Text = "Cantidad:"
-        '
-        'txtCantidadUpdate
-        '
-        Me.txtCantidadUpdate.Location = New System.Drawing.Point(100, 57)
-        Me.txtCantidadUpdate.Name = "txtCantidadUpdate"
-        Me.txtCantidadUpdate.Size = New System.Drawing.Size(60, 20)
-        Me.txtCantidadUpdate.TabIndex = 3
-        '
-        'btnActualizarStock
-        '
-        Me.btnActualizarStock.Location = New System.Drawing.Point(180, 40)
-        Me.btnActualizarStock.Name = "btnActualizarStock"
-        Me.btnActualizarStock.Size = New System.Drawing.Size(100, 30)
-        Me.btnActualizarStock.TabIndex = 4
-        Me.btnActualizarStock.Text = "Actualizar Stock"
-        Me.btnActualizarStock.UseVisualStyleBackColor = True
+        Me.dgvResultados.AllowUserToAddRows = False
+        Me.dgvResultados.AllowUserToDeleteRows = False
+        Me.dgvResultados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvResultados.Location = New System.Drawing.Point(20, 70)
+        Me.dgvResultados.Name = "dgvResultados"
+        Me.dgvResultados.ReadOnly = True
+        Me.dgvResultados.Size = New System.Drawing.Size(710, 360)
+        Me.dgvResultados.TabIndex = 3
+        
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.TabControl1)
+        Me.ClientSize = New System.Drawing.Size(784, 511)
+        Me.Controls.Add(Me.tabControl1)
         Me.Name = "Form1"
         Me.Text = "Biblioteca Digital"
-        Me.TabControl1.ResumeLayout(False)
-        Me.TabPage1.ResumeLayout(False)
+        Me.tabControl1.ResumeLayout(False)
+        Me.tabGestion.ResumeLayout(False)
+        Me.tabGestion.PerformLayout()
+        Me.grpTipo.ResumeLayout(False)
+        Me.grpTipo.PerformLayout()
+        Me.grpDetalles.ResumeLayout(False)
+        Me.grpDetalles.PerformLayout()
+        Me.tabInventario.ResumeLayout(False)
         CType(Me.dgvInventario, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPage2.ResumeLayout(False)
-        Me.TabPage2.PerformLayout()
-        Me.TabPage3.ResumeLayout(False)
-        Me.TabPage3.PerformLayout()
-        Me.TabPage4.ResumeLayout(False)
-        Me.TabPage4.PerformLayout()
-        CType(Me.dgvBusqueda, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
+        Me.grpOperaciones.ResumeLayout(False)
+        CType(Me.numStock, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tabBusqueda.ResumeLayout(False)
+        Me.tabBusqueda.PerformLayout()
+        CType(Me.dgvResultados, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents TabControl1 As TabControl
-    Friend WithEvents TabPage1 As TabPage
-    Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents TabPage3 As TabPage
-    Friend WithEvents TabPage4 As TabPage
-    Friend WithEvents dgvInventario As DataGridView
-    Friend WithEvents btnRefrescar As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents txtTituloLibro As TextBox
-    Friend WithEvents txtPaginasLibro As TextBox
-    Friend WithEvents Label6 As Label
-    Friend WithEvents txtStockLibro As TextBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents txtAnioLibro As TextBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents txtGeneroLibro As TextBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents txtAutorLibro As TextBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents btnAgregarLibro As Button
-    Friend WithEvents btnAgregarRevista As Button
-    Friend WithEvents Label7 As Label
-    Friend WithEvents txtStockRevista As TextBox
-    Friend WithEvents Label8 As Label
-    Friend WithEvents txtMesRevista As TextBox
-    Friend WithEvents Label9 As Label
-    Friend WithEvents txtEdicionRevista As TextBox
-    Friend WithEvents Label10 As Label
-    Friend WithEvents txtAnioRevista As TextBox
-    Friend WithEvents Label11 As Label
-    Friend WithEvents txtTituloRevista As TextBox
-    Friend WithEvents btnBuscar As Button
-    Friend WithEvents dgvBusqueda As DataGridView
-    Friend WithEvents Label12 As Label
-    Friend WithEvents txtBusqueda As TextBox
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents btnActualizarStock As Button
-    Friend WithEvents txtCantidadUpdate As TextBox
-    Friend WithEvents Label14 As Label
-    Friend WithEvents txtIdUpdate As TextBox
-    Friend WithEvents Label13 As Label
+    Friend WithEvents tabControl1 As System.Windows.Forms.TabControl
+    Friend WithEvents tabGestion As System.Windows.Forms.TabPage
+    Friend WithEvents tabInventario As System.Windows.Forms.TabPage
+    Friend WithEvents tabBusqueda As System.Windows.Forms.TabPage
+    Friend WithEvents grpTipo As System.Windows.Forms.GroupBox
+    Friend WithEvents rbRevista As System.Windows.Forms.RadioButton
+    Friend WithEvents rbLibro As System.Windows.Forms.RadioButton
+    Friend WithEvents txtTitulo As System.Windows.Forms.TextBox
+    Friend WithEvents lblTitulo As System.Windows.Forms.Label
+    Friend WithEvents txtAnio As System.Windows.Forms.TextBox
+    Friend WithEvents lblAnio As System.Windows.Forms.Label
+    Friend WithEvents txtStock As System.Windows.Forms.TextBox
+    Friend WithEvents lblStock As System.Windows.Forms.Label
+    Friend WithEvents grpDetalles As System.Windows.Forms.GroupBox
+    Friend WithEvents txtAutor As System.Windows.Forms.TextBox
+    Friend WithEvents lblAutor As System.Windows.Forms.Label
+    Friend WithEvents txtGenero As System.Windows.Forms.TextBox
+    Friend WithEvents lblGenero As System.Windows.Forms.Label
+    Friend WithEvents txtPaginas As System.Windows.Forms.TextBox
+    Friend WithEvents lblPaginas As System.Windows.Forms.Label
+    Friend WithEvents btnAgregar As System.Windows.Forms.Button
+    Friend WithEvents txtMes As System.Windows.Forms.TextBox
+    Friend WithEvents lblMes As System.Windows.Forms.Label
+    Friend WithEvents txtEdicion As System.Windows.Forms.TextBox
+    Friend WithEvents lblEdicion As System.Windows.Forms.Label
+    Friend WithEvents dgvInventario As System.Windows.Forms.DataGridView
+    Friend WithEvents btnRefrescar As System.Windows.Forms.Button
+    Friend WithEvents grpOperaciones As System.Windows.Forms.GroupBox
+    Friend WithEvents btnEliminar As System.Windows.Forms.Button
+    Friend WithEvents btnSumarStock As System.Windows.Forms.Button
+    Friend WithEvents numStock As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblBuscar As System.Windows.Forms.Label
+    Friend WithEvents txtBuscar As System.Windows.Forms.TextBox
+    Friend WithEvents btnBuscar As System.Windows.Forms.Button
+    Friend WithEvents dgvResultados As System.Windows.Forms.DataGridView
 End Class
